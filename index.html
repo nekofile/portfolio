@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFOLIO-2025</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/responseve_max639.css" media="screen and (max-width:639px)"> -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://kit.fontawesome.com/3d4edd2906.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script>
+         $(function(){
+           // #で始まるアンカーをクリックした場合に処理
+           $('a[href^=#]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒
+          // アンカーの値取得
+          var href= $(this).attr("href");
+          // 移動先を取得
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          // 移動先を数値で取得
+          var position = target.offset().top;
+          // スムーススクロール
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+           });
+            });
+        </script>
+    </head>
+    <body>
+        <header class="row">
+            <div id="header" class="side-by-side">
+                <h1 id="logo"><img src="images/logo.png" alt="ロゴ_Portfolio-2024"></h1>
+                <a href="https://x.com/PhAiHtmlCss/status/1857925505200300134" target="_blank"><i id="x" class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </header>
+        <nav class="row">
+            <ul id="g-nav">
+                <a href="#website"><li>Webサイト</li></a>
+                <a href="#banner"><li>　バナー　</li></a>
+                <a href="#thumbnail"><li>サムネイル</li></a>
+                <a href="#chart"><li>表・グラフ</li></a>
+                <a href="#about"><li>スキル一覧</li></a>
+            </ul>
+            <!-- <ul id="g-nav" class="mobile">
+                <a href="#website"><li><i class="fa-solid fa-laptop"></i><br>Webサイト</li></a>
+                <a href="#banner"><li><i class="fa-solid fa-b"></i><br>&nbsp;&nbsp;&nbsp;バナー&nbsp;&nbsp;&nbsp;</li></a>
+                <a href="#thumbnail"><li><i class="fa-solid fa-s"></i><br>サムネイル</li></a>
+                <a href="#chart"><li><i class="fa-solid fa-chart-pie"></i><br>表・グラフ</li></a>
+                <a href="#about"><li><i class="fa-solid fa-book-open"></i><br>スキル一覧</li></a>
+            </ul> -->
+        </nav>
+        <div id="about" class="row"><!-- 20min -->
+            <img src="images/img-face.png" alt="イメージアイコン">
+            <h3>Eri Masuda</h3>
+            <p class="profile-text">2017年にWEB専門スクールのWEBデザイナーコースを卒業。勤続総年数6年。WordPressやvscodeを使用したHPの更新作業、サムネイルや図表・グラフの作成などを担当。現在LPの作り方を学習中。<br>特技は、日に数件〜10件来る業務依頼をチームに上手く分散しながら時間内に納品すること。</p>
+        </div><!-- about -->
+        <div id="skills" class="row"><!-- 30min -->
+            <table>
+                <tr><th>Photoshop</th><td>実務4年</td><td><a href="#banner">バナー</a>・<a href="#thumbnail">サムネイル</a>を作成できます。</td></tr>
+                <tr><th>Illustrator</th><td>実務3年</td><td><a href="#chart">図表・グラフ</a>を作成できます。</td></tr>
+                <tr><th>HTML</th><td>実務2年</td><td><a href="https://www3.nhk.or.jp/news/special/sakusakukeizai/page/26/" target="_blank">下層ページの追加・編集ができます。</a></td></tr>
+                <tr><th>CSS</th><td>学習2年</td><td>プロパティを一通り理解できます。</td></tr>
+                <tr><th>Word</th><td>実務1年</td><td>書類の作成ができます。</td></tr>
+                <tr><th>Excel</th><td>実務1年</td><td>簡単なグラフを作成できます。</td></tr>
+                <tr><th>iMovie</th><td>学習1年</td><td>カット編集・文字挿入ができます。</td></tr>
+            </table>
+        </div><!-- skills -->
+        <div id="website" class="row"><!-- 30min -->
+        <h2>Webサイト</h2>
+        <p class="center"><small>Website</small></p>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_01.jpg" alt="沖縄ツアーサイト">
+            <section class="one-half">
+                <h4>沖縄ツアーサイト（架空サイト）</h4>
+                <p><a href="https://nekofile.github.io/okinawa/okinawa.html" target="_blank">https://nekofile.github.io/okinawa/okinawa.html</a></p>
+                <table>
+                    <tr><th>コンセプト</th><td>観光客の増加をねらう、沖縄の地域情報サイト</td></tr>
+                    <tr><th>ターゲット</th><td>旅行を考えている20〜40代の男女</td></tr>
+                    <tr><th>制作時間</th><td>約50時間（2週間）</td></tr>
+                    <tr><th>使用言語</th><td>HTML、CSS</td></tr>
+                    <tr><th>使用ツール</th><td>Illustrator、Photoshop、VSCode</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_02.jpg" alt="野菜宅配サービス">
+            <section class="one-half">
+                <h4>野菜宅配サービス（架空サイト）</h4>
+                <p><a href="https://nekofile.github.io/yasai/yasai.html" target="_blank">https://nekofile.github.io/yasai/yasai.html</a></p>
+                <table>
+                    <tr><th>コンセプト</th><td>新規顧客の増加をねらう、有機無農薬野菜の宅配サービスサイト</td></tr>
+                    <tr><th>ターゲット</th><td>健康や自然食品に興味のある30代以降の主婦層</td></tr>
+                    <tr><th>制作時間</th><td>約50時間（2週間）</td></tr>
+                    <tr><th>使用言語</th><td>HTML、CSS</td></tr>
+                    <tr><th>使用ツール</th><td>Illustrator、Photoshop、VSCode</td></tr>
+                </table>
+            </section>
+        </div>
+        </div><!-- website -->
+        <div id="banner" class="row"><!-- 30min -->
+        <h2>バナー</h2>
+        <p class="center"><small>Banner</small></p>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_03.jpg" alt="若者向けのスーツ販売店のバナー">
+            <section class="one-half">
+                <h4>若者向けのスーツ販売店のバナー</h4>
+                <table>
+                    <tr><th>コンセプト</th><td>オンラインショッピングへの誘導を目的とする、若者向けのスーツ販売店</td></tr>
+                    <tr><th>ターゲット</th><td>紳士服を着用している20代～30代の男性</td></tr>
+                    <tr><th>工夫した事</th><td>セール品と「80%off」がパッと目に入るよう、背景は青で統一し、アイテムをオールカラーで手前にしっかりと、「80%off」は黄色のゴシックで大きく入れました。</td></tr>
+                    <tr><th>制作時間</th><td>2〜3時間／Photoshop</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_04.jpg" alt="大学オープンキャンパスのバナー">
+            <section class="one-half">
+                <h4>大学オープンキャンパスのバナー</h4>
+                <table>
+                    <tr><th>コンセプト</th><td>オープンキャンパスへの来校を目的とする、渋谷・新宿にある私立大学</td></tr>
+                    <tr><th>ターゲット</th><td>大学受験を検討している高校生</td></tr>
+                    <tr><th>工夫した事</th><td>明るいブルーとオレンジで、爽やかなキャンパスライフをイメージしました。また、知的な雰囲気も出したかったので、幾何学的な線を用いて区分けしてみました。</td></tr>
+                    <tr><th>制作時間</th><td>2〜3時間／Illustrator</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_05.jpg" alt="バレンタイン販促バナー">
+            <section class="one-half">
+                <h4>バレンタイン販促バナー</h4>
+                <table>
+                    <tr><th>コンセプト</th><td>購入者増加をねらう、若者向けの製菓材料販売専門店</td></tr>
+                    <tr><th>ターゲット</th><td>バレンタインに手作りチョコを作ることを検討している10代～20代女性</td></tr>
+                    <tr><th>工夫した事</th><td>チョコレートと赤いリボンで、ちょっと大人な雰囲気に仕上げました。書体もクラシック体で、落ち着いた雰囲気に馴染むようにしました。</td></tr>
+                    <tr><th>制作時間</th><td>2〜3時間／Illustrator</td></tr>
+                </table>
+            </section>
+        </div>
+        </div><!-- banner -->
+        <div id="thumbnail" class="row"><!-- 40min -->
+        <h2>サムネイル </h2>
+        <p class="center"><small>Thumbnail</small></p>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_06.jpg" alt="清水寺こけし記事サムネイル">
+            <section class="one-half">
+                <h4>清水寺こけし記事のサムネイル</h4>
+                <table>
+                    <tr><th>制作時間</th><td>1〜2時間／Photoshop</td></tr>
+                    <tr><th>工夫した事</th><td>素材のインパクトを損なわないよう文字の位置を寄せ、色をこけしに合わせ、タイトルが悪目立ちしないよう気をつけました。また、人が通るとこけしが喋る仕掛けがあると聞き、こけしの口元にセリフを小さく追加してみました。</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_07.jpg" alt="釣りの魅力記事サムネイル">
+            <section class="one-half">
+                <h4>釣りの魅力記事のサムネイル</h4>
+                <table>
+                    <tr><th>制作時間</th><td>1〜2時間／Photoshop</td></tr>
+                    <tr><th>工夫した事</th><td>画像が魚の尾のところで切れていたため、Photoshopの自動追加で左側に自然な余白を作り、そこに文字を入れました。タイトルの「旅」「グルメ」というワードから旅行雑誌を連想したため、旅行誌のタグの様なデザインの遊びを入れました。</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="side-by-side section last-section">
+            <img class="one-half" src="images/img_08.jpg" alt="被災地の映像見るのが辛い人への記事サムネイル">
+            <section class="one-half">
+                <h4>被災地心のケア記事サムネイル</h4>
+                <table>
+                    <tr><th>制作時間</th><td>1〜2時間／Photoshop</td></tr>
+                    <tr><th>工夫した事</th><td>画像なしのご依頼だったため、記事をクリックするであろう人（＝つらい人）の気持ちが少しでも和らぐよう、Illustratorで、木漏れ日のような優しい色の背景を作成し、誠実な印象に見えるよう、明朝体を使用しました。</td></tr>
+                </table>
+            </section>
+        </div>
+        <a href="thumbnail.html"><p>過去の制作実績一覧へ&nbsp;<i class="fa-sharp-duotone fa-solid fa-play"></i></p></a>
+        </div><!-- thumbnail -->
+        <div id="chart" class="row"><!-- 30min -->
+        <h2>図表・グラフ </h2>
+        <p class="center"><small>Chart</small></p>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_09.jpg" alt="ワクチン供給量使用量（棒・折れ線グラフ）">
+            <section class="one-half">
+                <h4>ワクチン供給量使用量（棒・折れ線グラフ）</h4>
+                <table>
+                    <tr><th>制作時間</th><td>2時間／Illustrator</td></tr>
+                    <tr><th>工夫した事</th><td>比較の数値が5000万以上のため、4000未満は省略し比較部分が見やすくなるようにしました。また数字の色を、棒グラフと折れ線グラフの色に連動させ、見分けが付けやすいようにしました。</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="side-by-side section">
+            <img class="one-half" src="images/img_10.jpg" alt="コロナ感染者年代別割合">
+            <section class="one-half">
+                <h4>コロナ感染者年代別割合（円グラフ）</h4>
+                <table>
+                    <tr><th>制作時間</th><td>2時間／Illustrator</td></tr>
+                    <tr><th>工夫した事</th><td>50代以下の感染者が多いという事を言いたいため、50代以下と60代以降で２色に大きく分け、その中で各年代を濃淡で分け、まとめました。</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="side-by-side section last-section">
+            <img class="one-half" src="images/img_11.jpg" alt="輸出額が増えた食品（表）">
+            <section class="one-half">
+                <h4>2021年に輸出額が増えた食品（表）</h4>
+                <table>
+                    <tr><th>制作時間</th><td>5時間／Illustrator</td></tr>
+                    <tr><th>工夫した事</th><td>文字だけでは伝わりにくいのでイラスト付きでとのご依頼が来たため、Illustratorで１から作成しました。ぱっと見でそれと分かるような絵になるよう、フリーの画像なども参考に特徴を抽出しました。</td></tr>
+                </table>
+            </section>
+        </div>
+        <a href="chart.html"><p>過去の制作実績一覧へ&nbsp;<i class="fa-sharp-duotone fa-solid fa-play"></i></p></a>
+        </div><!-- chart -->
+        <div id="up" class="row">
+            <p><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></p>
+        </div>
+        <footer id="footer">
+        <div class="row">
+            <ul id="f-nav">
+                <a href="#website"><li>Webサイト</li></a>
+                <a href="#banner"><li>バナー</li></a>
+                <a href="#thumbnail"><li>サムネイル</li></a>
+                <a href="#chart"><li>表・グラフ</li></a>
+                <a href="#about"><li>スキル一覧</li></a>
+            </ul>
+        </div>
+        <p id="small"><small>&copy;portfolio-2024 Eri Masuda</small></p>
+        </footer>
+    </body>
+</html>
