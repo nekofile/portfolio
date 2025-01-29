@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@media screen and ( max-width:550px) {
+    /*　画面サイズが550pxまではここを読み込む　*/
+	#website .side-by-side{
+		display: block;
+	}
+	.img-okinawa{
+		padding: 60px 20px 0 20px;
+	}
+	.img-yasai{
+		padding: 80px 20px 0 20px;
+	}
+	h4{
+		padding-top: 30px;
+		padding-bottom: 10px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: normal;
+	}
+	.url{
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	#website a{
+		text-decoration: underline;
+	}
+	.exp div{
+        padding: 12px 10px;
+	}
+	.exp p{
+		text-align: center;
+		color: #333;
+	}
+	.exp div:nth-child(odd) {
+		background-color: #eef8fa;
+	}
+}
+
+
+@media screen and ( min-width:550px) and ( max-width:980px) {
+    /*　画面サイズが550pxから980pxまではここを読み込む　*/
+	#website .side-by-side{
+		display: block;
+	}
+	.img-okinawa{
+		padding: 60px 120px 0 120px;
+	}
+	.img-yasai{
+		padding: 100px 120px 0 120px;
+	}
+	h4{
+		padding-top: 30px;
+		padding-bottom: 5px;
+		text-align: center;
+		font-size: 24px;
+		font-weight: normal;
+	}
+	.url{
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	#website a{
+		text-decoration: underline;
+	}
+	.exp div{
+        padding: 12px 10px;
+	}
+	.exp p{
+		text-align: center;
+		color: #333;
+	}
+	.exp div:nth-child(odd) {
+		background-color: #eef8fa;
+	}
+}
+
+
+@media screen and (min-width:980px) {
+    /*　画面サイズが980pxからはここを読み込む　*/
+	.one-half{
+		width: 88%;
+	}
+	#website .one-half{
+		padding-top: 120px;
+	}
+	h4{
+		color: #333;
+		font-size: 22px;
+		padding-bottom: 10px;
+	}
+	#website table{
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	#website th{
+		padding-top: 10px;
+		width: 100px;
+		text-align: left;
+		color: #333;
+	}
+	#website td{
+		padding-top: 10px;
+		text-align: left;
+		color: #333;
+	}
+	#website a{
+		text-decoration: underline;
+	}	
+}

@@ -1,0 +1,54 @@
+@import url("./parts/01_header.css");
+@import url("./parts/02_about.css");
+@import url("./parts/03_skill.css");
+@import url("./parts/04_website.css");
+@import url("./parts/05_banner.css");
+@import url("./parts/06_thumbnail.css");
+@import url("./parts/07_chart.css");
+@import url("./parts/08_footer.css");
+@import url("./parts/thumb_chart.css");
+
+
+/* リセットCSS */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------ 全体で共通 ------ */
+
+img {
+	max-width: 100%;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.row {
+	max-width: 980px;
+	margin: 0 auto;
+}
+.side-by-side{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+	padding-top: 150px;
+	color: #444;
+	font-size: 36px;
+	border-bottom: solid 1px #ccc;
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.center{
+	text-align: center;
+	color: #666;
+}

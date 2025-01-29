@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@media screen and ( max-width:550px) {
+    /*　画面サイズが550pxまではここを読み込む　*/
+    #h2-chart, #h2-thumbnail{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 50px;
+        border-bottom: none;
+    }
+    #breadcrumb ul{
+        display: flex;
+        margin-bottom: 30px;
+        padding: 2px 0 2px 20px;
+        background-color: bisque;
+    }
+    #thumb_chart .grid-outer{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #thumb_chart .grid-inner_2{
+        margin-bottom: 20px;
+    }
+    #thumb_chart .one-third{
+        width: 45%;
+    }
+    #thumb_chart h3{
+        padding-bottom: 50px;
+    }
+    .geeeee{
+        color: #333;
+        font-weight: normal;
+    }
+    .btn-top p{
+        padding-top: 30px;
+    }
+}
+
+
+@media screen and ( min-width:550px) and ( max-width:980px) {
+    /*　画面サイズが550pxから980pxまではここを読み込む　*/
+    #h2-chart, #h2-thumbnail{
+        padding-top: 60px;
+        padding-bottom: 50px;
+        font-size: 60px;
+        border-bottom: none;
+    }
+    #breadcrumb ul{
+        display: flex;
+        margin-bottom: 30px;
+        padding: 2px 0 2px 20px;
+        background-color: bisque;
+    }
+    #thumb_chart .grid-outer{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #thumb_chart .grid-inner_2{
+        margin-bottom: 30px;
+    }
+    #thumb_chart .one-third{
+        width: 45%;
+    }
+    #thumb_chart h3{
+        padding-bottom: 50px;
+    }
+    .geeeee{
+        color: #333;
+        font-weight: normal;
+    }
+    .btn-top p{
+        padding-top: 30px;
+    }
+}
+
+
+@media screen and (min-width:980px) {
+    /*　画面サイズが980pxからはここを読み込む　*/
+    #h2-chart, #h2-thumbnail{
+        padding-top: 100px;
+        padding-bottom: 40px;
+        font-size: 60px;
+        border-bottom: none;
+    }
+    #breadcrumb ul{
+        display: flex;
+        padding-bottom: 30px;
+    }
+    #thumb_chart .grid-outer{
+        flex-wrap: wrap;
+    }
+    #thumb_chart .grid-inner_2{
+        margin-bottom: 30px;
+    }
+    #thumb_chart .one-third{
+        width: 30%;
+    }
+    #thumb_chart h3{
+        padding-bottom: 50px;
+    }
+    .geeeee{
+        color: #333;
+        font-weight: normal;
+        font-size: 20px;
+    }
+}

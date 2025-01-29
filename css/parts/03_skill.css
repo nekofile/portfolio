@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@media screen and ( max-width:550px) {
+    /*　画面サイズが550pxまではここを読み込む　*/
+    #skills a{
+        text-decoration: underline;
+    }
+    h5{
+        font-size: 19px;
+        color: #333;
+        text-align: center;
+    }
+    #skills section{
+        padding-bottom: 30px;
+    }
+    #skills section:last-child{
+        padding-bottom: 0;
+    }
+    #skills section p{
+        text-align: center;
+    }
+}
+
+
+@media screen and ( min-width:550px) and ( max-width:980px) {
+    /*　画面サイズが550pxから980pxまではここを読み込む　*/
+    #skills a{
+        text-decoration: underline;
+    }
+    h5{
+        font-size: 19px;
+        color: #333;
+        text-align: center;
+    }
+    #skills section{
+        padding-bottom: 30px;
+    }
+    #skills section:last-child{
+        padding-bottom: 0;
+    }
+    #skills section p{
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:980px) {
+    /*　画面サイズが980pxからはここを読み込む　*/
+    #skills th{
+        padding-top: 3px;
+        text-align: left;
+        color: #333;
+    }
+    #skills td{
+        padding-top: 3px;
+        padding-left: 15px;
+        color: #333;
+    }
+    #skills a{
+        text-decoration: underline;
+    }
+}

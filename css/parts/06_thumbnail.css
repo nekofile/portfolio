@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@media screen and ( max-width:550px) {
+    /*　画面サイズが550pxまではここを読み込む　*/
+	#thumbnail .side-by-side{
+		display: block;
+	}
+	.img-thumbnail{
+		padding: 80px 20px 0 20px;
+	}
+	#thumbnail h4{
+		padding-bottom: 25px;
+	}
+    #thumbnail .exp div:last-child{
+        border-bottom: solid 1px #eee;
+    }
+    #thumbnail a{
+        text-align: right;
+        text-decoration: underline;
+    }
+    #thumbnail a p{
+        padding: 10px;
+    }
+}
+
+
+@media screen and ( min-width:550px) and ( max-width:980px) {
+    /*　画面サイズが550pxから980pxまではここを読み込む　*/
+	#thumbnail .side-by-side{
+		display: block;
+	}
+	.img-thumbnail{
+		padding: 80px 120px 0 120px;
+	}
+	#thumbnail h4{
+		padding-bottom: 30px;
+	}
+    #thumbnail .exp div{
+		padding-right: 82px;
+		padding-left: 82px;
+	}
+    #thumbnail .exp div:last-child{
+        border-bottom: solid 1px #eee;
+    }
+    #thumbnail a{
+        text-align: right;
+        text-decoration: underline;
+    }
+    #thumbnail a p{
+        padding: 10px;
+    }
+}
+
+
+@media screen and (min-width:980px) {
+    /*　画面サイズが980pxからはここを読み込む　*/
+	#thumbnail .one-half{
+		padding-top: 120px;
+	}
+    .one-half2{
+        width: 110%;
+        padding-top: 120px;
+    }
+	#thumbnail table{
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	#thumbnail th{
+		padding-top: 10px;
+		width: 100px;
+		text-align: left;
+		color: #333;
+	}
+	#thumbnail td{
+		padding-top: 10px;
+		text-align: left;
+		color: #333;
+	}
+    #thumbnail a{
+        text-align: right;
+        text-decoration: underline;
+    }
+}

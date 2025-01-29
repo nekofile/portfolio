@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+header{
+    background-color: #fff;
+    position: sticky;
+	top: 0;
+}
+
+@media screen and ( max-width:980px) {
+    /*　画面サイズが980pxまではここを読み込む　*/
+    .pc{
+        display: none;
+    }
+    #logo-mo{
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 45%;
+    }
+    #x-mo{
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 35px;
+        color: #777;
+    }
+    #gnav-mo{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px #eee;  
+    }
+    #gnav-mo li{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:980px) {
+    /*　画面サイズが980pxからはここを読み込む　*/
+    .mobile{
+        display: none;
+    }
+    #logo-pc{
+        margin-top: 10px;
+        width: 22%;
+    }
+    #x-pc{
+        margin-top: 15px;
+        font-size: 30px;
+        color: #777;
+    }
+    #x-pc:hover{
+        color: #000;
+    }
+    #gnav-pc{
+        display: flex;
+        justify-content: space-around;
+    }
+    #gnav-pc li{
+        padding-top: 20px;
+        font-size: 18px;
+        color: #777;
+    }
+    #gnav-pc a{
+        padding-left: 40px;
+    }
+    #gnav-pc li:hover{
+        color: #000;
+        border-bottom: solid 1px #000;
+    }
+}

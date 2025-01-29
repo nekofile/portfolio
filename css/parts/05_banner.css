@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@media screen and ( max-width:550px) {
+    /*　画面サイズが550pxまではここを読み込む　*/
+	#banner .side-by-side{
+		display: block;
+	}
+	.img-banner{
+		padding: 80px 20px 0 20px;
+	}
+	#banner h4{
+		padding-bottom: 25px;
+	}
+    #banner .exp div:last-child{
+        border-bottom: solid 1px #eee;
+    }
+}
+
+
+@media screen and ( min-width:550px) and ( max-width:980px) {
+    /*　画面サイズが550pxから980pxまではここを読み込む　*/
+	#banner .side-by-side{
+		display: block;
+	}
+	.img-banner{
+		padding: 80px 120px 0 120px;
+	}
+	#banner h4{
+		padding-bottom: 30px;
+	}
+	#banner .exp div{
+		padding-right: 82px;
+		padding-left: 82px;
+	}
+    #banner .exp div:last-child{
+        border-bottom: solid 1px #eee;
+    }
+}
+
+
+@media screen and (min-width:980px) {
+    /*　画面サイズが980pxからはここを読み込む　*/
+	#banner .one-half{
+		padding-top: 120px;
+	}
+	#banner table{
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	#banner th{
+		padding-top: 10px;
+		width: 100px;
+		text-align: left;
+		color: #333;
+	}
+	#banner td{
+		padding-top: 10px;
+		text-align: left;
+		color: #333;
+	}
+}
