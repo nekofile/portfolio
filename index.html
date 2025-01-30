@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/3d4edd2906.js" crossorigin="anonymous"></script>
+    <!-- jQuery.jsの読み込み -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <!-- スムーズスクロール部分の記述 -->
     <script>
-     $(function(){
+    $(function(){
+       // #で始まるアンカーをクリックした場合に処理
        $('a[href^=#]').click(function() {
-      var speed = 400;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top;
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-       });
+            // スクロールの速度
+            var speed = 400; // ミリ秒
+            // アンカーの値取得
+            var href= $(this).attr("href");
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
         });
+    });
     </script>
 </head>
 <body>
@@ -56,7 +64,7 @@
         <img src="images/img-face.png" alt="イメージアイコン">
         <h3>Eri Masuda</h3>
         <div class="bg-text">
-            <p>2017年にWEB専門スクールのWEBデザイナーコースを卒業。勤続総年数6年。WordPressやvscodeを使用したHPの更新作業、サムネイルや図表・グラフの作成などを担当。現在LPの作り方を学習中。<br>特技は、日に数件〜10件来る業務依頼をチームに上手く分散しながら時間内に納品すること。</p>
+            <p>2017年にWEB専門スクールのWEBデザイナーコースを卒業。勤続総年数6年。WordPressやvscodeを使用したHPの更新作業、サムネイルや図表・グラフの作成などを担当。<br>主にメールや口頭（電話を含む）で記者や編集の方からのご依頼（ページ更新・サムネイル作成など）を受け、数名のスタッフで作業を分担しつつ納品。</p>
         </div>
     </div><!-- about -->
     <div id="skills" class="row">
@@ -287,12 +295,12 @@
                     </div>
                     <div>
                         <p><strong>★工夫した事★</strong></p>
-                        <p>素材のインパクトを損なわないよう文字の位置を寄せ、色をこけしに合わせ、タイトルが悪目立ちしないよう気をつけました。また、人が通るとこけしが喋る仕掛けがあると聞き、こけしの口元にセリフを小さく追加してみました。</p>
+                        <p>文字の位置を寄せ、色をこけしに合わせ、こけしのインパクトを潰さないよう気をつけました。また、人が通るとこけしが喋る仕掛けがあると聞き、こけしの口元にセリフを小さく追加してみました。</p>
                     </div>
                 </div>
                 <table class="pc">
                     <tr><th>制作時間</th><td>1〜2時間／Photoshop</td></tr>
-                    <tr><th>工夫した事</th><td>素材のインパクトを損なわないよう文字の位置を寄せ、色をこけしに合わせ、タイトルが悪目立ちしないよう気をつけました。また、人が通るとこけしが喋る仕掛けがあると聞き、こけしの口元にセリフを小さく追加してみました。</td></tr>
+                    <tr><th>工夫した事</th><td>文字の位置を寄せ、色をこけしに合わせ、こけしのインパクトを潰さないよう気をつけました。また、人が通るとこけしが喋る仕掛けがあると聞き、こけしの口元にセリフを小さく追加してみました。</td></tr>
                 </table>
                 <a href="https://www.nhk.or.jp/kyoto/lreport/article/001/33/" target="_blank"><p>サイトへ&nbsp;<i class="fa-sharp-duotone fa-solid fa-play"></i></p></a>
             </section>
@@ -300,7 +308,7 @@
         <div class="side-by-side">
             <div class="img-thumbnail"><img class="one-half" src="images/img_07.jpg" alt="釣りの魅力記事サムネイル"></div>
             <section class="one-half2">
-                <h4>釣りの魅力記事のサムネイル</h4>
+                <h4>犬用クッキーのサムネイル</h4>
                 <div class="mobile exp">
                     <div>
                         <p><strong>★制作時間／使用ツール★</strong></p>
@@ -308,19 +316,20 @@
                     </div>
                     <div>
                         <p><strong>★工夫した事★</strong></p>
-                        <p>画像が魚の尾のところで切れていたため、Photoshopの自動追加で左側に自然な余白を作り、そこに文字を入れました。タイトルの「旅」「グルメ」というワードから旅行雑誌を連想したため、旅行誌のタグの様なデザインの遊びを入れました。</p>
+                        <p>生産者の顔をしっかり見せつつ、パッと見て生産物が分かるよう商品のアップを並べました。また、「犬用クッキー」の文字の一部を、足跡や骨の形にしたら面白いかと思い入れて見たところ、依頼者の方にも受けて採用していただけました。</p>
                     </div>
                 </div>
                 <table class="pc">
                     <tr><th>制作時間</th><td>1〜2時間／Photoshop</td></tr>
-                    <tr><th>工夫した事</th><td>画像が魚の尾のところで切れていたため、Photoshopの自動追加で左側に自然な余白を作り、そこに文字を入れました。タイトルの「旅」「グルメ」というワードから旅行雑誌を連想したため、旅行誌のタグの様なデザインの遊びを入れました。</td></tr>
+                    <tr><th>工夫した事</th><td>生産者の顔をしっかり見せつつ、パッと見て生産物が分かるよう商品のアップを並べました。また、「犬用クッキー」の文字の一部を、足跡や骨の形にしたら面白いかと思い入れて見たところ、依頼者の方にも受けて採用していただけました。</td></tr>
                 </table>
+                <a href="https://www.nhk.or.jp/shizuoka/lreport/article/006/55/" target="_blank"><p>サイトへ&nbsp;<i class="fa-sharp-duotone fa-solid fa-play"></i></p></a>
             </section>
         </div>
         <div class="side-by-side">
             <div class="img-thumbnail"><img class="one-half" src="images/img_08.jpg" alt="被災地の映像見るのが辛い人への記事サムネイル"></div>
             <section class="one-half2">
-                <h4>被災地心のケア記事サムネイル</h4>
+                <h4>京都の魅力発信記事サムネイル</h4>
                 <div class="mobile exp">
                     <div>
                         <p><strong>★制作時間／使用ツール★</strong></p>
@@ -328,13 +337,14 @@
                     </div>
                     <div>
                         <p><strong>★工夫した事★</strong></p>
-                        <p>画像なしのご依頼だったため、記事をクリックするであろう人（＝つらい人）の気持ちが少しでも和らぐよう、Illustratorで、木漏れ日のような優しい色の背景を作成し、誠実な印象に見えるよう、明朝体を使用しました。</p>
+                        <p>シリーズものの記事で今回は「まき割り」がテーマでしたが、文字を見ている内に「割」が半分に割れていたら面白いかなと思い、斧のイラストと共に割ってみたところ、依頼者の方に受けて採用していただけました。</p>
                     </div>
                 </div>
                 <table class="pc">
                     <tr><th>制作時間</th><td>1〜2時間／Photoshop</td></tr>
-                    <tr><th>工夫した事</th><td>画像なしのご依頼だったため、記事をクリックするであろう人（＝つらい人）の気持ちが少しでも和らぐよう、Illustratorで、木漏れ日のような優しい色の背景を作成し、誠実な印象に見えるよう、明朝体を使用しました。</td></tr>
+                    <tr><th>工夫した事</th><td></td></tr>
                 </table>
+                <a href="https://www.nhk.or.jp/kyoto/lreport/articles/300/210/13/" target="_blank"><p>サイトへ&nbsp;<i class="fa-sharp-duotone fa-solid fa-play"></i></p></a>
             </section>
         </div>
         <a href="thumbnail.html"><p>過去のサムネイル実績一覧へ&nbsp;<i class="fa-sharp-duotone fa-solid fa-play"></i></p></a>
