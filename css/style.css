@@ -24,6 +24,9 @@ a{
 
 /* ------ 全体で共通 ------ */
 
+html {
+	scroll-behavior: smooth;
+}
 img {
 	max-width: 100%;
 }
