@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@media screen and ( max-width:550px) {
+    /*　画面サイズが550pxまではここを読み込む　*/
+    #nworks a{
+        text-decoration: underline;
+    }
+	#nworks ul{
+		padding-top: 50px;
+	}
+	#nworks ul li{
+		padding: 15px;
+	}
+}
+
+
+@media screen and ( min-width:550px) and ( max-width:980px) {
+    /*　画面サイズが550pxから980pxまではここを読み込む　*/
+    #nworks a{
+        text-decoration: underline;
+    }
+	#nworks ul{
+		padding-top: 40px;
+	}
+	#nworks ul li{
+		padding: 20px;
+	}
+}
+
+
+@media screen and (min-width:980px) {
+    /*　画面サイズが980pxからはここを読み込む　*/
+    #nworks a{
+        text-decoration: underline;
+    }
+	#nworks ul{
+		padding-top: 40px;
+	}
+	#nworks ul li{
+		padding-top: 20px;
+	}
+}
