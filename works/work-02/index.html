@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WSTRIP 沖縄観光情報サイト制作 | WORKS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Manrope:wght@500;700;800&family=Jost:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="../../index.html">PORTFOLIO</a>
+    <a class="back" href="../../index.html#works">WORKS一覧へ戻る</a>
+  </div>
+</header>
+
+<main>
+  <!-- ===== hero ===== -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../../index.html">TOP</a> ／ <a href="../../index.html#works">WORKS</a> ／ WSTRIP</p>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <ul class="tags"><li>Webデザイン</li><li>HTML/CSS</li><li>コーディング</li><li>3ページ</li></ul>
+          <h1><small>WSTRIP</small>沖縄の観光情報サイト<br>デザイン・コーディング</h1>
+          <p class="lead">沖縄への観光客を増やすことを目的とした、地域情報サイト「WSTRIP」の制作課題です。見本デザインをもとにトップページと下層２ページ（自然、特集）の、画像制作およびHTML・CSSによる実装までを担当しました。</p>
+          <p class="more"><a href="https://nekofile.github.io/okinawa/okinawa.html" target="_blank" rel="noopener noreferrer">完成したサイトを見る<span aria-hidden="true">→</span></a></p>
+        </div>
+        <img class="hero-img zoom" src="img/mockup_hero.webp" alt="WSTRIPのPC版・SP版トップページのモックアップ">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== overview ===== -->
+  <section class="block" aria-labelledby="s-about">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="s-about"><span>Overview</span>制作概要</h2></div>
+      <div class="narrow">
+        <p class="concept">青い空と海で、<br>「沖縄に行きたい」を後押しする。</p>
+        <dl class="meta">
+          <dt>課題</dt><dd>沖縄の地域情報サイト「WSTRIP」制作（クリエイティブ・ワーク・ライブラリの課題）</dd>
+          <dt>サイトの目的</dt><dd>沖縄への観光客の増加</dd>
+          <dt>ターゲット</dt><dd>旅行に興味のある20代〜30代の男女</dd>
+          <dt>ページ構成</dt><dd>トップページ、自然（斎場御嶽の紹介）、特集（沖縄を食べつくせ）</dd>
+          <dt>担当範囲</dt><dd>画像作成、HTML・CSSコーディング（見本デザインをもとに制作）</dd>
+          <dt>使用ツール</dt><dd>Photoshop、Illustrator、HTML、CSS、VSCode</dd>
+          <dt>制作期間</dt><dd>2週間（トータル50時間）</dd>
+        </dl>
+        <h3>カラー</h3>
+        <p>主役は写真の空と海の青です。文字やフッターはグレーで抑え、7つのカテゴリ（自然・食事・歴史・体験・宿泊）に、グリーン・オレンジ・ブルー・バーガンディー・イエロー・ピンク・パープルを割り当てて、記事の種類がひと目で分かるようにしています。</p>
+      </div>
+      <ul class="swatches">
+        <li><i style="background:#00AB00"></i>グリーン</li>
+        <li><i style="background:#F0CD02"></i>イエロー</li>
+        <li><i style="background:#FF8901"></i>オレンジ</li>
+        <li><i style="background:#3465EE"></i>ブルー</li>
+        <li><i style="background:#FE7AAC"></i>ピンク</li>
+        <li><i style="background:#A01858"></i>バーガンディー</li>
+        <li><i style="background:#8E4EC6"></i>パープル</li>
+        <li><i style="background:#666666"></i>グレー</li>
+        <li><i style="background:#AAAAAA"></i>ミディアムグレー</li>
+        <li><i style="background:#EEEEEE;border-color:#BDBDBD"></i>ライトグレー</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== design ===== -->
+  <section class="block" aria-labelledby="s-web">
+    <div class="wrap work">
+      <div class="stage">
+        <div class="devices">
+          <figure><img class="zoom" src="img/mockup_pc.webp" alt="WSTRIP PC版トップページ"><figcaption class="cap">PC</figcaption></figure>
+          <figure><img class="zoom" src="img/mockup_sp.webp" alt="WSTRIP SP版トップページ"><figcaption class="cap">SP</figcaption></figure>
+        </div>
+      </div>
+      <div class="text">
+        <div class="sec-head"><h2 id="s-web"><span>Design</span>Webサイト TOP</h2></div>
+        <p>ファーストビューには沖縄の空と海の写真を大きく使い、手書き風の「Let's go! OKINAWA」で旅の高揚感を演出しています。</p>
+        <ul class="points">
+          <li>ホバーエフェクトの実装により、グローバルナビゲーションの視認性とインタラクティブ性を向上</li>
+          <li>オススメ記事は写真・カテゴリタグ・タイトル・説明文をセットにしたカードで統一</li>
+          <li>特集はバナーで見せ、記事一覧とは違う「読みもの」への入口を作る</li>
+          <li>PCは3列、SPは1列に組み替え、スマホでも写真を大きく見せる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== pages ===== -->
+  <section class="block" aria-labelledby="s-pages">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="s-pages"><span>Pages</span>各ページのデザイン</h2>
+        <p>トップページと下層ページ2つの、計3ページを制作しました。ヘッダーとフッターは共通にしつつ、下層ページはそれぞれの内容に合わせてレイアウトを変えています。枠の中はスクロールしてページ全体を見られます。</p>
+      </div>
+      <div class="pages">
+        <figure>
+          <div class="shot" tabindex="0" aria-label="トップページ全体（スクロールできます）"><img src="img/page_top.webp" alt="WSTRIPトップページ全体" width="1000" height="1841" loading="lazy"></div>
+          <figcaption>
+            <h3>トップページ</h3>
+            <p>空と海の写真で旅の気分を高め、オススメ記事6件と特集バナー2件へ案内します。カテゴリごとにタグの色を変え、記事の種類を見分けやすくしました。</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="shot" tabindex="0" aria-label="自然ページ全体（スクロールできます）"><img src="img/page_nature.webp" alt="自然ページ（斎場御嶽）全体" width="1000" height="1836" loading="lazy"></div>
+          <figcaption>
+            <h3>自然（斎場御嶽）</h3>
+            <p>メイン写真とサムネイル、紹介文、INFORMATION、地図の順に、行く前に知りたい情報をまとめました。右側には「周辺の観光スポット」を置き、次の記事へ回遊できるようにしています。</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="shot" tabindex="0" aria-label="特集ページ全体（スクロールできます）"><img src="img/page_special.webp" alt="特集ページ（沖縄を食べつくせ）全体" width="1000" height="2827" loading="lazy"></div>
+          <figcaption>
+            <h3>特集（沖縄を食べつくせ）</h3>
+            <p>料理の写真と縦書きの料理名を左右交互に配置し、雑誌をめくるようなリズムを作りました。料理ごとに見出しとボタンの色を変え、花のあしらいで沖縄らしさを添えています。</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== coding ===== -->
+  <section class="block" aria-labelledby="s-code">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="s-code"><span>Coding</span>HTML・CSSによる実装</h2>
+        <p>サイトの構造や仕組みを学ぶために、AIに頼らず、すべて手作業でコーディングしました。課題の仕様書に沿って、HTMLとCSSで実装しています。</p>
+      </div>
+      <div class="code-grid">
+        <div>
+          <h3>ディレクトリ構成</h3>
+          <p>学習を目的に、あえてシンプルな構成にしました。最初の階層にトップページ・自然・特集の3つのHTMLファイルを置き、CSSはcssフォルダ、画像はimagesフォルダにまとめています。制作当時はディレクトリのルールを十分に理解していなかったため、ファイル名はindex.htmlではなく、okinawa.htmlのようにページごとの名前になっています。</p>
+          <pre class="tree">okinawa/
+├─ <a href="https://github.com/nekofile/okinawa/blob/main/okinawa.html" target="_blank" rel="noopener noreferrer">okinawa.html</a>          <span class="c">… トップページ</span>
+├─ <a href="https://github.com/nekofile/okinawa/blob/main/okinawa_shizen.html" target="_blank" rel="noopener noreferrer">okinawa_shizen.html</a>    <span class="c">… 自然</span>
+├─ <a href="https://github.com/nekofile/okinawa/blob/main/okinawa_special.html" target="_blank" rel="noopener noreferrer">okinawa_special.html</a>   <span class="c">… 特集</span>
+├─ css/
+│   ├─ <a href="https://github.com/nekofile/okinawa/blob/main/css/common.css" target="_blank" rel="noopener noreferrer">common.css</a>
+│   ├─ <a href="https://github.com/nekofile/okinawa/blob/main/css/common_2.css" target="_blank" rel="noopener noreferrer">common_2.css</a>
+│   ├─ <a href="https://github.com/nekofile/okinawa/blob/main/css/responseve_640_979.css" target="_blank" rel="noopener noreferrer">responseve_640_979.css</a>
+│   ├─ <a href="https://github.com/nekofile/okinawa/blob/main/css/responseve_max639.css" target="_blank" rel="noopener noreferrer">responseve_max639.css</a>
+│   └─ <a href="https://github.com/nekofile/okinawa/blob/main/css/style.css" target="_blank" rel="noopener noreferrer">style.css</a>
+└─ images/</pre>
+          <p class="cap" style="text-align:left">※ファイル名をクリックすると、GitHubでコードを確認できます。</p>
+        </div>
+        <div>
+          <h3>コーディングで守ったルール</h3>
+          <ul class="points">
+            <li>画像は表示サイズと同じ大きさに書き出し、拡大縮小せずに表示</li>
+            <li>タグはすべて小文字、インデントは半角スペース2つ分のタブで統一</li>
+            <li>コメントタグで各ブロックの始まりと終わりを示し、構造を読み取りやすく</li>
+            <li>自然ページの地図はGoogleマップを埋め込み、その場で場所を確認できるように</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== reflection ===== -->
+  <section class="block" aria-labelledby="s-end">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="s-end"><span>Reflection</span>制作を終えて</h2></div>
+      <div class="narrow">
+        <p>今回はAIに頼らず、仕様書のルールを守りながら、画像制作からHTML・CSSによる実装までを一人で行いました。タグの書き方やインデント、コメントの入れ方など、あとから読み返しても分かりやすいコードを書くことを意識しました。</p>
+        <p style="margin:0">AIを使わず全てを自分の手で行うことで、サイトの基本構造や仕組み、各要素の役割についてより深く学ぶことができました。一方で、ディレクトリのルールなど、まだ理解が足りない部分にも気づくことができました。今後はコーディングしやすいデザインとは何かを考えながら、デザインと実装をつなげられるデザイナーとして、制作の幅を広げていきたいと考えています。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<nav class="pager" aria-label="ページ移動">
+  <div class="wrap">
+    <a class="btn" href="../../index.html#works">WORKS一覧へ戻る</a>
+  </div>
+</nav>
+<footer class="site-foot">© 2026 ERI MASUDA PORTFOLIO</footer>
+
+<dialog id="lb" aria-label="拡大画像">
+  <button type="button" id="lb-close">閉じる</button>
+  <img id="lb-img" alt="">
+</dialog>
+<script>
+(function(){
+  var d=document.getElementById('lb'),im=document.getElementById('lb-img');
+  document.querySelectorAll('.zoom').forEach(function(el){
+    el.setAttribute('tabindex','0');el.setAttribute('role','button');
+    function open(){im.src=el.src;im.alt=el.alt;if(d.showModal)d.showModal();}
+    el.addEventListener('click',open);
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+  });
+  document.getElementById('lb-close').addEventListener('click',function(){d.close();});
+  d.addEventListener('click',function(e){if(e.target===d)d.close();});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+:root{
+  --bg:#f5f5f2; --surface:#ffffff; --ink:#16181d; --sub:#5b5f68; --body:#3f434b; --line:#dcdcd6;
+  --foot:#eaeae4; --head:#222222; --lb-bg:#111111; --lb-box:#222222; --lb-text:#ffffff; --accent:#2445d6; --thumb:#e4e6ea;
+  --en:"Manrope","Zen Kaku Gothic New",sans-serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;letter-spacing:.03em;font-feature-settings:"palt" 1}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible,.zoom:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1152px,100% - 48px);margin-inline:auto}
+p{margin:0}
+
+/* header */
+.site-head{border-bottom:1px solid var(--line);background:var(--bg)}
+.site-head .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font-family:var(--en);font-weight:800;font-size:18px;letter-spacing:.04em;text-decoration:none}
+.back{font-size:14px;color:var(--sub);text-decoration:none}
+.back:hover{color:var(--ink)}
+
+/* intro */
+.intro{padding:48px 0 32px}
+.crumb{font-size:13px;color:var(--sub);margin:0 0 32px}
+.crumb a{text-decoration:none}
+.crumb a:hover{text-decoration:underline}
+.intro-grid{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px 48px}
+.intro-text{flex:1 1 520px;min-width:0}
+.eyebrow{font-family:var(--en);font-weight:700;font-size:14px;letter-spacing:.18em;color:var(--sub)}
+h1{margin:8px 0 0;color:var(--head);font-size:clamp(30px,4vw,44px);line-height:1.3;font-weight:700;letter-spacing:.02em}
+.lead{margin-top:20px;color:var(--body);max-width:620px}
+.summary{display:flex;flex-wrap:wrap;gap:32px;margin:0}
+.summary dt{font-size:13px;color:var(--sub)}
+.summary dd{margin:0;font-size:16px;font-weight:500;line-height:2.2}
+.summary dd.num{color:var(--head);font-family:var(--en);font-weight:800;font-size:36px;line-height:1.2}
+
+/* works grid */
+.works{padding:0 0 80px}
+.grid{list-style:none;margin:0;padding:40px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:48px 32px}
+.card{display:flex;flex-direction:column;gap:14px;min-width:0}
+.thumb{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;background:var(--thumb);border:1px solid rgba(22,24,29,.08)}
+.zoom{cursor:zoom-in}
+.no{font-family:var(--en);font-size:12px;font-weight:700;color:var(--sub);letter-spacing:.08em}
+.card h2{margin:0;color:var(--head);font-size:18px;line-height:1.5;font-weight:700}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;margin:0;font-size:13px;color:var(--body)}
+.meta dt{color:var(--sub)}
+.meta dd{margin:0}
+
+/* footer nav */
+.pager{border-top:1px solid var(--line);padding:56px 0;background:var(--foot)}
+.pager .wrap{display:flex;justify-content:center;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:14px 36px;border:1px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.site-foot{background:#2a2a2a;margin:0;text-align:center;font-family:var(--en);font-size:12px;color:#ffffff;padding:36px 0}
+
+/* lightbox */
+dialog{border:0;padding:0;background:var(--lb-bg);color:var(--lb-text);color-scheme:dark;width:min(960px,94vw);max-width:94vw;max-height:92vh;overflow:auto;border-radius:8px}
+html:has(dialog[open]){overflow:hidden}
+dialog::backdrop{background:rgba(16,18,22,.86)}
+.lb-img{width:100%;height:auto;display:block}
+.lb-body{padding:28px 40px 40px}
+.lb-title{margin:0 0 4px;color:var(--lb-text);font-size:20px;line-height:1.5;font-weight:700}
+.lb-note h3{margin:24px 0 6px;font-size:14px;font-weight:700;color:var(--lb-text);letter-spacing:.06em}
+.lb-note p{margin:0 0 .6em;font-size:15px;line-height:1.9;color:var(--lb-text);max-width:44em}
+.lb-note p:last-child{margin-bottom:0}
+#lb-close{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:16px;z-index:1;min-height:44px;background:#fff;color:#222;border:0;border-radius:999px;padding:8px 20px;font:inherit;font-size:14px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+
+/* lightbox：PCは1枚の座布団に画像とテキスト。画面は固定し、テキスト領域だけスクロール */
+@media (min-width:901px){
+  dialog[open]{display:flex;flex-direction:column;width:min(880px,92vw,calc(50vh * 16 / 9 + 64px));max-height:90vh;padding:32px;overflow:hidden;border-radius:10px}
+  .lb-img{flex:none;width:100%;border-radius:6px}
+  .lb-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;margin-top:24px;padding:28px 40px 32px;background:var(--lb-box);border-radius:6px}
+}
+
+@media (max-width:560px){
+  .wrap{width:calc(100% - 40px)}
+  .intro{padding:36px 0 28px}
+  .works{padding-bottom:64px}
+  .grid{padding-top:32px;gap:40px}
+  .lb-body{padding:20px 20px 28px}
+  .lb-title{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* header logo (matches the home page) */
+.logo{font-family:"Jost","Helvetica Neue",Arial,sans-serif;font-weight:400;font-size:15px;letter-spacing:.12em;white-space:nowrap;color:#5E6B7B}
+
+/* header height (matches the home page) */
+@media (max-width:720px){.site-head .wrap{height:52px}}
